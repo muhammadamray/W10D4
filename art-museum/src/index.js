@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 function Root() {
   return (
-    <App />
     // <h1>Hello from Root</h1>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   )
 
 
@@ -14,7 +17,7 @@ function Root() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root/>
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
